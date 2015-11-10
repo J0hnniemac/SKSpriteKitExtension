@@ -20,5 +20,8 @@ tileNode - pass in a texture smaller than you node and it will fill the node up 
         UIGraphicsEndImageContext()
         let finalImage = SKTexture(CGImage: tiledBackground.CGImage!)
         self.texture = finalImage
+        //current image is returned upside down, someting to do with way texture is chnaged to CGImage - work
+        //around is to load you tile in upside down. 
+        //will look into in future updates
     }
 }
